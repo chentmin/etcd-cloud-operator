@@ -6,7 +6,8 @@ terraform {
       source = "hashicorp/aws"
     }
     ignition = {
-      source = "https://github.com/hashicorp/terraform-provider-ignition?ref=v1.2.1"
+      source = "community-terraform-providers/ignition"
+      version = "2.1.3"
     }
     template = {
       source = "hashicorp/template"
