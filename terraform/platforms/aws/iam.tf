@@ -14,6 +14,14 @@ resource "aws_iam_role" "instances" {
         {
             "Action": "sts:AssumeRole",
             "Principal": {
+                "Service": "autoscaling.amazonaws.com"
+            },
+            "Effect": "Allow",
+            "Sid": ""
+        },
+        {
+            "Action": "sts:AssumeRole",
+            "Principal": {
                 "Service": "ec2.amazonaws.com"
             },
             "Effect": "Allow",
