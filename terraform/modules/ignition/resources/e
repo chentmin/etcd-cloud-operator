@@ -2,9 +2,6 @@
 set -a
 
 ETCDCTL_API=3
-ETCDCTL_CACERT=/etc/eco/ca.crt
-ETCDCTL_CERT=/etc/eco/eco.crt
-ETCDCTL_KEY=/etc/eco/eco.key
 ETCDCTL_INSECURE_SKIP_TLS_VERIFY=true
 
 if [[ ! $@ = *"--endpoints="* ]]; then
